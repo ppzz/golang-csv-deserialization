@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	csvdeserialization "github.com/ppzz/csv-deserialization"
+	csvdeserialization "github.com/ppzz/golang-csv-deserialization"
 	"os"
 )
 

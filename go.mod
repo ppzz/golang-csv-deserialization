@@ -1,4 +1,4 @@
-module github.com/ppzz/csv-deserialization
+module github.com/ppzz/golang-csv-deserialization
 
 go 1.18
 

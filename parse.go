@@ -1,4 +1,4 @@
-package csv_deserialization
+package golang_csv_deserialization
 
 import (
 	"errors"
