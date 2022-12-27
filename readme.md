@@ -13,9 +13,11 @@ int,    float,      bool,       string,                                     arr:
 1002,   2222.3,     FALSE,      "I can eat glass, it does not hurt me.",    "3707,3720,3391,3752",  "101: 90, 102: 99, 103: 99",    "magic-type: fire, weapon: Melville's Bone"
 ```
 
+the csv example is here [./example/example.csv](./example/example.csv)
+
 golang struct definition:
 
-```golang
+```
 type Player struct {
     Id       int               `csv:"id"`
     Power    float64           `csv:"power"`
@@ -56,11 +58,11 @@ supported val type in csv:
 | map(string:bool)  | map[string]bool     |
 | map(string:string) | map[string]string   |
 
-demo:
+## demo:
 
 install this pkg : `go get github.com/ppzz/csv-deserialization`
 
-```go
+```
 import csvdeserialization "github.com/ppzz/csv-deserialization"
 
 func main() {
@@ -74,10 +76,10 @@ func main() {
     c.Attach(&list)
     
     for i := 0; i < len(list); i++ {
-    item := list[i]
-    fmt.Println(i, item.Id, item.Power, item.IsNewbie, item.Desc, item.Skill, item.Score, item.Subject)
+        item := list[i]
+        fmt.Println(i, item.Id, item.Power, item.IsNewbie, item.Desc, item.Skill, item.Score, item.Subject)
     }
 }
 ```
 
-or just run `./example/example.go`
+or just run [./example/example.go](./example/example.go)
