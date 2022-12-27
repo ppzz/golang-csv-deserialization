@@ -1,0 +1,4 @@
+id,power,is_newbie,desc,skill,score,subject
+int,float,bool,string,arr:int,map(int:int),map(string:string)
+1001,131.159,TRUE,"I can eat glass, it does not hurt me.","3701,3722,3380,3752","101:88, 102:90, 103:60","magic-type: science, weapon: electromagnetic gun"
+1002,2222.3,FALSE,"I can eat glass, it does not hurt me.","3707,3720,3391,3752","101: 90, 102: 99, 103: 99","magic-type: fire, weapon: Melville's Bone"
