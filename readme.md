@@ -35,25 +35,25 @@ supported val type in csv:
 
 | csv column type   | golang field type   |
 |-------------------|---------------------|
-| int               | int                 |                   
-| float             | float               |             
-| bool              | bool                |              
-| string            | string              |            
-| arr:int           | []int               |           
-| arr:float         | []float             |         
-| arr:bool          | []bool              |          
-| arr:string        | []string            |        
-| map(int:int)      | map[int]int         |      
-| map(int:float)    | map[int]float64     |    
-| map(int:bool)     | map[int]bool        |     
-| map(int:string)   | map[int]string      |   
-| map(float:int)    | map[float64]int     |    
-| map(float:float)  | map[float64]float64 |  
-| map(float:bool)   | map[float64]bool    |   
-| map(float:string) | map[float64]string  | 
-| map(string:int)   | map[string]int      |   
-| map(string:float) | map[string]float64  | 
-| map(string:bool)  | map[string]bool     |  
+| int               | int                 |
+| float             | float               |
+| bool              | bool                |
+| string            | string              |
+| arr:int           | []int               |
+| arr:float         | []float             |
+| arr:bool          | []bool              |
+| arr:string        | []string            |
+| map(int:int)      | map[int]int         |
+| map(int:float)    | map[int]float64     |
+| map(int:bool)     | map[int]bool        |
+| map(int:string)   | map[int]string      |
+| map(float:int)    | map[float64]int     |
+| map(float:float)  | map[float64]float64 |
+| map(float:bool)   | map[float64]bool    |
+| map(float:string) | map[float64]string  |
+| map(string:int)   | map[string]int      |
+| map(string:float) | map[string]float64  |
+| map(string:bool)  | map[string]bool     |
 | map(string:string) | map[string]string   |
 
 demo:
@@ -68,7 +68,7 @@ func main() {
     defer f.Close()
     
     c := csvdeserialization.Csv{}
-    c.Read(f)``
+    c.Read(f)
     
     var list []Player
     c.Attach(&list)
